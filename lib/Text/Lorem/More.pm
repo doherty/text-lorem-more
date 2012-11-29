@@ -230,8 +230,8 @@ _END_
 	path => sub { [ "+word", 1 + int rand 6, "/" ] },
 
 	httpurl => [ map { [ $_ ] } split m/\n/, <<_END_ ],
-http://+hostname+path
-http://+hostname:+port+path
+http://+hostname/+path
+http://+hostname:+port/+path
 _END_
 	port => sub { int rand(1 + (2 ** 15)) },
 

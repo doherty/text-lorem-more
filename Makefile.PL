@@ -20,6 +20,7 @@ resources repository => 'http://github.com/robertkrimen/text-lorem-more/tree/mas
 
 {
     map { my ($pk, $vr) = split m/\s/; build_requires $pk => $vr || 0 } grep { ! /^\s*#/ } split m/\n/, <<_END_;
+Data::Validate::URI
 Test::Most
 Test::More
 _END_
