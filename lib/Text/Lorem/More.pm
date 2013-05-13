@@ -235,7 +235,7 @@ http://+hostname:+port/+path
 _END_
 	port => sub { int rand(1 + (2 ** 15)) },
 
-	mailto => \"mailto:+email",
+	mailto => [ ['mailto:+email'] ],
 
 	tld => "topleveldomain",
 
